@@ -476,9 +476,9 @@ root@cs-202-02:/lab/work/lego/certificates#
 
 | Етап | TLS 1.3, нове з'єднання | TLS 1.2, нове з'єднання | Повторне використання з'єднання |
 |---|---|---|---|
-| `time_connect` | 64.240|60.564 |0 |
-| `time_appconnect` |99.318|124.873 |0 |
-| `time_starttransfer` | 129.622|155.267 |31.882 |
+| `time_connect` | 1 RTT| 1 RTT |0 RTT |
+| `time_appconnect` |1 RTT|2 RTT|0 RTT|
+| `time_starttransfer` | 1 RTT|1 RTT |1 RTT |
 
 Вивід кроків 5.2 і 5.3:
 TLS 1.3
